@@ -1,0 +1,38 @@
+.footer {
+    border-top: 0.1rem var(--div-color) solid;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.footer-section {
+    padding: 0.5rem 1rem;
+}
+
+.footer-section p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-end {
+    padding: 0.5rem 0;
+    border-top: 0.1rem var(--div-color) solid;
+    text-align: center;
+}
+
+.footer-section li {
+    cursor: pointer;
+}
+
+.footer-section li,
+a {
+    transition: color 0.3s ease-out;
+}
+
+.footer-section li:hover,
+a:hover {
+    color: #c2c2c2
+}
