@@ -310,6 +310,10 @@
         height: 70rem;
     }
 
+    .section-content {
+        width: 70%;
+    }
+
     .category-image  {
         height: 30rem;
     }
