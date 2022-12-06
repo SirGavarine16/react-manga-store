@@ -55,3 +55,19 @@ ul {
     margin: 0;
 }
 
+.button-primary {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--text-secondary);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.button-primary:hover {
+    background-color: #3595D7;
+}
