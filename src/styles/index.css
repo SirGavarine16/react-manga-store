@@ -71,3 +71,8 @@ ul {
 .button-primary:hover {
     background-color: #3595D7;
 }
+
+.page-title {
+    margin: calc(var(--spacing) / 2) 0;
+    text-align: center;
+}
