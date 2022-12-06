@@ -9,7 +9,7 @@
 }
 
 .section {
-    margin: calc(var(--spacing) / 2) 0;
+    margin: calc(var(--spacing) / 1.5) 0;
 }
 
 .section-header {
@@ -68,6 +68,7 @@
 .about-content p {
     margin-top: 1rem;
     text-align: justify;
+    line-height: 1.5;
 }
 
 .about-image {
@@ -173,7 +174,6 @@
 
     .about-content p {
         font-size: 1.25rem;
-        line-height: 1.5;
     }
 }
 
