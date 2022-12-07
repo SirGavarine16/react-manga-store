@@ -1,18 +1,20 @@
 import { FC } from 'react';
-import { Helmet } from 'react-helmet';
-import { CategoryCard, ProductCard } from '../components/home';
 
 import './../styles/home.css';
+import { CategoryCard, ProductCard } from '../components/home';
+import { useHelmet } from '../hooks';
 
 interface Props {
 }
 
 const Home: FC<Props> = () => {
+    const { Helmet } = useHelmet({
+        title: 'Manga Store - Home',
+    })
+
     return (
         <main>
-            <Helmet>
-                <title>Manga Store - Home</title>
-            </Helmet>
+            <Helmet />
 
             <div className="hero"></div>
 

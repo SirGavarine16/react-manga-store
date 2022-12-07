@@ -1,17 +1,19 @@
 import { FC } from 'react';
-import { Helmet } from 'react-helmet';
 
 import './../styles/aboutus.css';
+import { useHelmet } from '../hooks';
 
 interface Props {
 }
 
 const AboutUs: FC<Props> = () => {
+    const { Helmet } = useHelmet({
+        title: 'Manga Store - About Us',
+    });
+
     return (
         <main>
-            <Helmet>
-                <title>Manga Store - About Us</title>
-            </Helmet>
+            <Helmet />
 
             <h1 className='page-title'>About Us</h1>
 
