@@ -153,7 +153,7 @@ ul {
     .products-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        column-gap: 1rem;
+        column-gap: 2rem;
     }
 
     .product:nth-child(1) {
@@ -173,6 +173,11 @@ ul {
 
     .product:nth-child(3) {
         grid-column: 4/7;
+    }
+
+    .product:nth-child(2) .product-image,
+    .product:nth-child(3) .product-image {
+        height: 18rem;
     }
 
     .product:nth-child(2) .product-data,
