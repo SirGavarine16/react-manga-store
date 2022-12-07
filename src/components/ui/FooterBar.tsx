@@ -31,7 +31,7 @@ const FooterBar: FC<Props> = () => {
                     <ul>
                         <li>FAQs</li>
                         <li>Online Support</li>
-                        <a href="https://github.com/SirGavarine16" target='_blank' rel='noreferrer noopener'>GitHub</a>
+                        <a href="https://github.com/SirGavarine16/react-manga-store" target='_blank' rel='noreferrer noopener'>GitHub</a>
                     </ul>
                 </div>
             </div>
