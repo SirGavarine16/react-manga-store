@@ -1,0 +1,45 @@
+.gallery-container {
+    column-count: 2;
+    column-gap: 1rem;
+}
+
+.gallery-image {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px 2px var(--div-color);
+    margin-bottom: 1rem;
+}
+
+/*
+    MEDIA QUERIES	
+*/
+
+/*  Medium Devices (Tablets, 768px and up)  */
+@media (min-width: 768px) {
+    .gallery-container {
+        column-count: 3;
+    }
+}
+
+/*  Large Devices (Desktops, 992px and up)  */
+@media (min-width: 992px) {
+    
+}
+
+/*  X-Large Devices (Large Desktops, 1200px and up)  */
+@media (min-width: 1200px) {
+    .gallery-container {
+        column-count: 4;
+    }
+}
+
+/*  XX-Large Devices (Larger Desktops, 1800px and up)  */
+@media (min-width: 1800px) {
+    
+}
+
+/*  XXX-Large Devices (Even Larger Desktops, 2000px and up)  */
+@media (min-width: 2000px) {
+    
+}
