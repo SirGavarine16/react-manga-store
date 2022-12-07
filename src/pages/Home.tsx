@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
 import './../styles/home.css';
-import { CategoryCard, ProductCard } from '../components/home';
 import { useHelmet } from '../hooks';
+import { CategoryCard, ProductCard } from '../components';
 
 interface Props {
 }
