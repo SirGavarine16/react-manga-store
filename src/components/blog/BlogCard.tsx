@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
     title: string;
@@ -10,6 +11,12 @@ interface Props {
 }
 
 const BlogCard: FC<Props> = ({ title, contents, img, imageCredits, imageDate, imageAlt }) => {
+    const navigate = useNavigate();
+    
+    const navigateToEntryPage = () => {
+        navigate('/blog/entry');
+    }
+    
     return (
         <div className="blog-card">
             <div className="blog-head">
@@ -26,13 +33,13 @@ const BlogCard: FC<Props> = ({ title, contents, img, imageCredits, imageDate, im
             <div className="blog-content">
                 <h2>{title}</h2>
                 {
-                    contents.map((content) => (
-                        <p>{content}</p>
+                    contents.map((content, index) => (
+                        <p key={`blog-p-${index}`}>{content}</p>
                     ))
                 }
             </div>
             <div className="blog-btn">
-                <button className="button-primary">
+                <button className="button-primary" onClick={navigateToEntryPage}>
                     Read more
                 </button>
             </div>

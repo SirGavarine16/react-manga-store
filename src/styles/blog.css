@@ -59,6 +59,11 @@
     color: #c2c2c2
 }
 
+.entry-container {
+    max-width: 90%;
+    margin: 0 auto 1rem auto;
+}
+
 /*
     MEDIA QUERIES	
 */
@@ -69,6 +74,10 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         column-gap: 2rem;
+    }
+
+    .entry-container {
+        max-width: 70%;
     }
 }
 
@@ -82,6 +91,10 @@
     .blog-container {
         grid-template-columns: 3fr 2fr;
     }
+
+    .entry-container {
+        max-width: 45%;
+    }
 }
 
 /*  XX-Large Devices (Larger Desktops, 1800px and up)  */
@@ -89,11 +102,19 @@
     .blog-img {
         height: 35rem;
     }
+
+    .entry-container {
+        max-width: 40%;
+    }
 }
 
 /*  XXX-Large Devices (Even Larger Desktops, 2000px and up)  */
 @media (min-width: 2000px) {
     .blog-img {
         height: 45rem;
+    }
+
+    .entry-container {
+        max-width: 30%;
     }
 }

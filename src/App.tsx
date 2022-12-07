@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { StoreLayout } from "./layouts";
-import { AboutUs, Blog, Contact, Gallery, Home, Store } from "./pages";
+import { AboutUs, Blog, BlogEntry, Contact, Gallery, Home, Store } from "./pages";
 
 const App: FC = () => {
 
@@ -12,6 +12,7 @@ const App: FC = () => {
         <Route path='aboutus' element={<AboutUs />} />
         <Route path='store' element={<Store />} />
         <Route path='blog' element={<Blog />} />
+        <Route path='blog/entry' element={<BlogEntry />} />
         <Route path='gallery' element={<Gallery />} />
         <Route path='contact' element={<Contact />} />
         <Route path='*' element={<Navigate to='/' replace />} />
