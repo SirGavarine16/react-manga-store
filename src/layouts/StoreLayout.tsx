@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Outlet } from 'react-router-dom';
+
 import { FooterBar, NavigationBar } from '../components';
 
 interface Props {
