@@ -1,0 +1,85 @@
+.contact-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.contact-form fieldset {
+    border: 0.1rem solid var(--div-color);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form legend {
+    background-color: var(--primary-color);
+    color: var(--text-secondary);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 3px 3px 2px var(--div-color);
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.field label {
+    font-size: 1.1rem;
+}
+
+.field input, textarea, select {
+    width: 75%;
+}
+
+.field textarea {
+    resize: none;
+}
+
+.input {
+    border: 1px solid var(--div-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+/*
+    MEDIA QUERIES	
+*/
+
+/*  Medium Devices (Tablets, 768px and up)  */
+@media (min-width: 768px) {
+    .contact-container {
+        max-width: 55%;
+    }
+}
+
+/*  Large Devices (Desktops, 992px and up)  */
+@media (min-width: 992px) {
+    
+}
+
+/*  X-Large Devices (Large Desktops, 1200px and up)  */
+@media (min-width: 1200px) {
+    .contact-container {
+        max-width: 30%;
+    }
+}
+
+/*  XX-Large Devices (Larger Desktops, 1800px and up)  */
+@media (min-width: 1800px) {
+    .contact-container {
+        max-width: 25%;
+    }
+}
+
+/*  XXX-Large Devices (Even Larger Desktops, 2000px and up)  */
+@media (min-width: 2000px) {
+    .contact-container {
+        max-width: 15%;
+    }
+}

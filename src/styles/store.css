@@ -1,0 +1,93 @@
+.products-container {
+    margin-bottom: calc(var(--spacing) / 2);
+}
+
+.product-image {
+    height: 25rem;
+}
+
+/*
+    MEDIA QUERIES	
+*/
+
+/*  Medium Devices (Tablets, 768px and up)  */
+@media (min-width: 768px) {
+    .product-image {
+        height: 22.5rem;
+    }
+
+    .product:nth-child(1) .product-image {
+        height: 20rem;
+    }
+
+    .product:nth-child(2) .product-data,
+    .product:nth-child(3) .product-data {
+        height: 19.5rem;
+    }
+
+    .product:nth-child(4) .product-data,
+    .product:nth-child(5) .product-data,
+    .product:nth-child(6) .product-data {
+        height: 22.5rem;
+    }
+}
+
+/*  Large Devices (Desktops, 992px and up)  */
+@media (min-width: 992px) {}
+
+/*  X-Large Devices (Large Desktops, 1200px and up)  */
+@media (min-width: 1200px) {
+    .product:nth-child(1) .product-image {
+        height: 25rem;
+    }
+
+    .product:nth-child(2) .product-image,
+    .product:nth-child(3) .product-image {
+        height: 28rem;
+    }
+
+    .product:nth-child(2) .product-data,
+    .product:nth-child(3) .product-data {
+        height: 15.5rem;
+    }
+
+    .product:nth-child(4) .product-data,
+    .product:nth-child(5) .product-data,
+    .product:nth-child(6) .product-data {
+        height: 17rem;
+    }
+}
+
+/*  XX-Large Devices (Larger Desktops, 1800px and up)  */
+@media (min-width: 1800px) {
+
+    .product:nth-child(1) .product-image,
+    .product:nth-child(4) .product-image,
+    .product:nth-child(5) .product-image,
+    .product:nth-child(6) .product-image {
+        height: 30rem;
+    }
+
+    .product:nth-child(2) .product-image,
+    .product:nth-child(3) .product-image {
+        height: 40rem;
+    }
+}
+
+/*  XXX-Large Devices (Even Larger Desktops, 2000px and up)  */
+@media (min-width: 2000px) {
+    .product:nth-child(1) .product-image {
+        height: 35rem;
+    }
+
+    .product:nth-child(2) .product-image,
+    .product:nth-child(3) .product-image {
+        height: 48rem;
+    }
+
+    .product:nth-child(4) .product-image,
+    .product:nth-child(5) .product-image,
+    .product:nth-child(6) .product-image {
+        height: 45rem;
+    }
+}

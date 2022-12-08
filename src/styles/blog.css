@@ -1,0 +1,120 @@
+.blog-card {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px var(--div-color) solid;
+}
+
+.blog-img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 2px 3px 3px 2px var(--div-color);
+    border-radius: 5px;
+}
+
+.blog-img-data {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.blog-img-data span {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.blog-content p {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.blog-btn {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blog-btn button {
+    width: 50%;
+}
+
+.blog-aside {
+    margin: 1rem 0;
+}
+
+.blog-aside ul {
+    list-style-type: disc;
+    padding: 0 1.5rem;
+}
+
+.blog-aside li {
+    margin-top: 0.5rem;
+    transition: color 0.3s ease-out;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.blog-aside li:hover {
+    color: #c2c2c2
+}
+
+.entry-container {
+    max-width: 90%;
+    margin: 0 auto 1rem auto;
+}
+
+/*
+    MEDIA QUERIES	
+*/
+
+/*  Medium Devices (Tablets, 768px and up)  */
+@media (min-width: 768px) {
+    .blog-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .entry-container {
+        max-width: 70%;
+    }
+}
+
+/*  Large Devices (Desktops, 992px and up)  */
+@media (min-width: 992px) {
+    
+}
+
+/*  X-Large Devices (Large Desktops, 1200px and up)  */
+@media (min-width: 1200px) {
+    .blog-container {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .entry-container {
+        max-width: 45%;
+    }
+}
+
+/*  XX-Large Devices (Larger Desktops, 1800px and up)  */
+@media (min-width: 1800px) {
+    .blog-img {
+        height: 35rem;
+    }
+
+    .entry-container {
+        max-width: 40%;
+    }
+}
+
+/*  XXX-Large Devices (Even Larger Desktops, 2000px and up)  */
+@media (min-width: 2000px) {
+    .blog-img {
+        height: 45rem;
+    }
+
+    .entry-container {
+        max-width: 30%;
+    }
+}
